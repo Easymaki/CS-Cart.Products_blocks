@@ -1,11 +1,5 @@
 <?php
 
-use Tygh\Enum\ProductFeatures;
-use Tygh\Enum\ProfileFieldSections;
-use Tygh\Enum\ProfileFieldTypes;
-use Tygh\Enum\YesNo;
-use Tygh\Registry;
-
 $schema['products']['content']['items']['fillings']['in_stock'] = array(
     'params' => array(
         'in_stock' => true
