@@ -9,6 +9,7 @@ function fn_blocks_products_get_products(&$params, $fields, $sortings, &$conditi
     if (!empty($params['out_of_stock'])) {
         $condition .= db_quote(' AND products.amount = ?i', '0');
     }
+    
     if (!empty($params['in_stock'])) {
         $condition .= db_quote(' AND products.amount > ?i', '0');
     }
